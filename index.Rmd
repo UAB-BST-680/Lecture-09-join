@@ -1,0 +1,256 @@
+---
+title: "Joining data"
+subtitle: "Intro to 'The Office'"
+author: "Byron C. Jaeger"
+date: "Last updated: `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: "slides.css"
+    logo: img/intro_2R_hex.png
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: inverse, center, middle
+
+```{r, include = FALSE}
+
+library(tidyverse)
+library(gt)
+library(broom)
+library(tblStrings)
+library(glue)
+
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 12,
+  fig.height = 5.5,
+  dpi = 72 * 5
+)
+
+raw_ratings <- read_csv('data/office_ratings.csv') %>% 
+  select(-air_date)
+
+raw_info <- schrute::theoffice %>% 
+  select(-index, -text_w_direction, -imdb_rating, -total_votes, -air_date)
+
+raw_directors <- raw_info %>% 
+  select(season, episode_name, director, writer) %>% 
+  distinct() %>% 
+  separate_rows(writer, sep = ';')
+
+```
+
+# The Office
+
+---
+background-image: url(img/schrute.png)
+background-size: 12.5%
+background-position: 97.5% 2.5%
+
+## The Office 
+
+- An American mockumentary sitcom television series that depicts the everyday lives of office employees.
+
+- Met with mixed reviews during its short first season, but the following seasons, particularly those featuring Steve Carell, received significant acclaim from television critics.
+
+- Later seasons were criticized for a decline in quality, with many seeing Carell's departure in season seven as a contributing factor. 
+
+- The final season ended the series' run with a generally positive response.
+
+- The `schrute` package contains a full transcript of every Office episode!
+
+---
+background-image: url(img/office_meme.jpg)
+background-size: 70%
+
+---
+class: inverse, center, middle
+
+# Joining data
+
+---
+layout: true
+background-image: url(img/dplyr.png)
+background-size: 12.5%
+background-position: 97.5% 2.5%
+
+## Relational data
+
+---
+
+It’s rare that a data analysis involves only a single table of data. 
+
+- Usually combine many tables of data to answer questions
+
+- Multiple tables of data are called relational data.
+
+---
+
+For example, `raw_ratings` has one row per episode of The Office <br/> and contains the average IMDB rating.
+
+```{r} 
+raw_ratings
+```
+
+---
+
+On the other hand, `raw_directors` has one row per writer for <br/> each episode and also specifies the episode's director.
+
+```{r} 
+raw_directors
+```
+
+---
+
+Some problems:
+
+- column names for episode titles are different in the two sets.
+
+- not all of the episode names from `raw_ratings` are in `raw_directors`, and vice-versa.
+
+  ```{r}
+  all(raw_ratings$episode %in% raw_directors$episode_name)
+  ```
+
+- different units of observation in these two datasets.
+
+You will get a chance to engage with these problems in class exercises.
+
+For now, we will look at some simpler examples based on summaries of these data.
+
+---
+
+`ratings_byseason`: The mean rating of episodes, by season
+
+```{r}
+
+ratings_byseason <- raw_ratings %>% 
+  group_by(season) %>% 
+  summarise(rating = weighted.mean(imdb_rating, total_votes))
+
+ratings_byseason
+
+```
+
+---
+
+`directors_byseason`: The most frequent director of each season
+
+```{r}
+
+directors_byseason <- raw_directors %>% select(-writer) %>% 
+  distinct() %>% group_by(season) %>% count(director) %>% 
+  arrange(desc(n)) %>% slice(1) %>% select(-n)
+
+directors_byseason
+
+```
+
+
+---
+layout: true
+background-image: url(img/dplyr.png)
+background-size: 12.5%
+background-position: 97.5% 2.5%
+
+
+---
+
+## Joining verbs
+
+There are 3 families of verbs designed for relational data:
+
+1. __Mutating joins__, which add new variables to one data frame from matching observations in another.
+
+1. __Filtering joins__, which filter observations from one data frame based on whether or not they match an observation in the other table.
+
+1. __Set operations__, which treat observations as if they were set elements.
+
+---
+
+## Joining verbs
+
+An example of __Mutating join:__
+
+```{r, eval=FALSE}
+
+ratings_byseason %>% #<<
+  left_join(directors_byseason)
+
+```
+
+```{r, echo=FALSE}
+
+ratings_byseason
+
+```
+
+---
+## Joining verbs
+
+An example of __Mutating join:__
+
+```{r, eval=FALSE}
+
+ratings_byseason %>% 
+  left_join(directors_byseason) #<<
+
+```
+
+```{r, echo=FALSE}
+
+ratings_byseason %>% 
+  left_join(directors_byseason)
+
+```
+
+---
+## Left join
+
+```{r, out.width='80%', echo = FALSE, fig.align='center'}
+knitr::include_graphics('img/left-join.gif')
+```
+
+---
+## Right join
+```{r, out.width='80%', echo = FALSE, fig.align='center'}
+knitr::include_graphics('img/right-join.gif')
+```
+
+---
+## Semi join
+```{r, out.width='80%', echo = FALSE, fig.align='center'}
+knitr::include_graphics('img/semi-join.gif')
+```
+
+---
+## Anti join
+```{r, out.width='80%', echo = FALSE, fig.align='center'}
+knitr::include_graphics('img/anti-join.gif')
+```
+
+---
+## Full join
+```{r, out.width='80%', echo = FALSE, fig.align='center'}
+knitr::include_graphics('img/full-join.gif')
+```
+
+---
+
+layout:false 
+
+## Learning more
+
+To learn more, see
+
+- Many more joining animations in the img folder
+
+- This [vignette](https://dplyr.tidyverse.org/articles/two-table.html) dedicated to joining verbs. 
+
+
+

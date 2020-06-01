@@ -1,0 +1,224 @@
+season,episode_name,director,writer
+1,Pilot,Ken Kwapis,Ricky Gervais
+1,Pilot,Ken Kwapis,Stephen Merchant
+1,Pilot,Ken Kwapis,Greg Daniels
+1,Diversity Day,Ken Kwapis,B.J. Novak
+1,Health Care,Ken Whittingham,Paul Lieberstein
+1,The Alliance,Bryan Gordon,Michael Schur
+1,Basketball,Greg Daniels,Greg Daniels
+1,Hot Girl,Amy Heckerling,Mindy Kaling
+2,The Dundies,Greg Daniels,Mindy Kaling
+2,Sexual Harassment,Ken Kwapis,B.J. Novak
+2,Office Olympics,Paul Feig,Michael Schur
+2,The Fire,Ken Kwapis,B.J. Novak
+2,Halloween,Paul Feig,Greg Daniels
+2,The Fight,Ken Kwapis,Gene Stupnitsky
+2,The Fight,Ken Kwapis,Lee Eisenberg
+2,The Client,Greg Daneils,Paul Lieberstein
+2,Performance Review,Paul Feig,Larry Willmore
+2,E-Mail Surveilance,Paul Feig,Jennifer Celotta
+2,Christmas Party,Charles McDougall,Michael Schur
+2,Booze Cruise,Ken Kwapis,Greg Daniels
+2,The Injury,Bryan Gordon,Mindy Kaling
+2,The Secret,Dennie Gordon,Lee Eisenberg
+2,The Secret,Dennie Gordon,Gene Stupnitsky
+2,The Carpet,Victor Nelli Jr.,Paul Lieberstein
+2,Boys & Girls,Dennie Gordon,B.J. Novak
+2,Valentine's Day,Greg Daniels,Michael Schur
+2,Dwight's Speech,Charles McDougal,Paul Lieberstein
+2,Take Your Daughter to Work Day,Victor Nelli Jr.,Mindy Kaling
+2,Michael's Birthday,Ken Wittingham,Gene Stupnitsky
+2,Michael's Birthday,Ken Wittingham,Lee Eisenberg
+2,Drug Testing,Greg Daniels,Jennifer Celotta
+2,Conflict Resolution,Greg Daniels,Greg Daniels
+2,Casino Night,Greg Daniels,Steve Carell
+3,Gay Witch Hunt,Ken Kwapis,Greg Daniels
+3,The Convention,Ken Whittingham,Lee Eisenberg
+3,The Convention,Ken Whittingham,Gene Stupnitsky
+3,The Coup,Greg Daniels,Paul Lieberstein
+3,Grief Counseling,Roger Nygard,Jennifer Celotta
+3,Initiation,Randall Einhorn,B.J. Novak
+3,Diwali,Miguel Arteta,Mindy Kaling
+3,Branch Closing,Tucker Gates,Michael Schur
+3,The Merger,Ken Whittingham,Brent Forrester
+3,The Convict,Jeffrey Blitz,Ricky Gervais
+3,The Convict,Jeffrey Blitz,Stephen Merchant
+3,A Benihana Christmas (Parts 1&2),Harold Ramis,Jennifer Celotta
+3,Back from Vacation,Julian Farino,Justin Spitzer
+3,Traveling Salesmen,Greg Daniels,Michael Schur
+3,Traveling Salesmen,Greg Daniels,Lee Eisenberg
+3,Traveling Salesmen,Greg Daniels,Gene Stupnitsky
+3,The Return,Greg Daniels,Lee Eisenberg
+3,The Return,Greg Daniels,Gene Stupnitsky
+3,The Return,Greg Daniels,Michael Schur
+3,Ben Franklin,Randall Einhorn,Mindy Kaling
+3,Phyllis' Wedding,Ken Whittingham,Caroline Williams
+3,Business School,Joss Whedon,Brent Forrester
+3,Cocktails,J.J. Abrams,Paul Lieberstein
+3,The Negotiation,Jeffrey Blitz,Michael Schur
+3,Safety Training,Harold Ramis,B.J. Novak
+3,Product Recall,Randall Einhorn,Brent Forrester
+3,Product Recall,Randall Einhorn,Justin Spitzer
+3,Women's Appreciation,Tucker Gates,Gene Stupnitsky
+3,Women's Appreciation,Tucker Gates,Lee Eisenberg
+3,Beach Games,Harold Ramis,Jennifer Celotta
+3,Beach Games,Harold Ramis,Greg Daniels
+3,The Job (Parts 1&2),Ken Kwapis,Paul Lieberstein
+3,The Job (Parts 1&2),Ken Kwapis,Michael Schur
+4,Fun Run (Parts 1&2),Greg Daniels,Greg Daniels
+4,Dunder Mifflin Infinity (Parts 1&2),Craig Zisk,Michael Schur
+4,Launch Party (Parts 1&2),Ken Whittingham,Jennifer Celotta
+4,Money (Parts 1&2),Paul Lieerstein,Paul Lieberstein
+4,Local Ad,Jason Reitman,B.J. Novak
+4,Branch Wars,Joss Whedon,Mindy Kaling
+4,Survivor Man,Paul Feig,Steve Carell
+4,The Deposition,Julian Farino,Lester Lewis
+4,Dinner Party,Paul Feig,Gene Stupnitsky
+4,Dinner Party,Paul Feig,Lee Eisenberg
+4,Chair Model,Jeffrey Blitz,B.J. Novak
+4,Night Out,Ken Whittingham,Mindy Kaling
+4,Did I Stutter?,Randall Einhorn,Brent Forrester
+4,Did I Stutter?,Randall Einhorn,Justin Spitzer
+4,Job Fair,Tucker Gates,Lee Eisenberg
+4,Job Fair,Tucker Gates,Gene Stupnitsky
+4,"Goodbye, Toby (Parts 1&2)",Paul Feig,Jennifer Celotta
+4,"Goodbye, Toby (Parts 1&2)",Paul Feig,Paul Lieberstein
+5,Weight Loss (Parts 1&2),Paul Feig,Lee Eisenberg
+5,Weight Loss (Parts 1&2),Paul Feig,Gene Stupnitsky
+5,Business Ethics,Jeffrey Blitz,Ryan Koh
+5,Baby Shower,Greg Daniels,Aaron Shure
+5,Crime Aid,Jennifer Celotta,Charlie Grandy
+5,Employee Transfer,David Rogers,Anthony Q. Farrell
+5,Customer Survey,Stephen Merchant,Lester Lewis
+5,Business Trip,Randall Einhorn,Brent Forrester
+5,Frame Toby,Jason Reitman,Mindy Kaling
+5,The Surplus,Paul Feig,Gene Stupnitsky
+5,The Surplus,Paul Feig,Lee Eisenberg
+5,Moroccan Christmas,Paul Feig,Justin Spitzer
+5,The Duel,Dean Holland,Jennifer Celotta
+5,Prince Family Paper,Asaad Kelada,B.J. Novak
+5,Stress Relief (Parts 1&2),Jeffrey Blitz,Paul Lieberstein
+5,Lecture Circuit (Part 1),Ken Kwapis,Mindy Kaling
+5,Lecture Circuit (Part 2),Ken Kwapis,Mindy Kaling
+5,Blood Drive,Randall Einhorn,Brent Forrester
+5,Golden Ticket,Randall Einhorn,Mindy Kaling
+5,New Boss,Paul Feig,Lee Eisenberg
+5,New Boss,Paul Feig,Gene Stupnitsky
+5,Two Weeks,Paul Lieberstein,Aaron Shure
+5,Dream Team,Paul Feig,B.J. Novak
+5,The Michael Scott Paper Company,Gene Stupnitsky;Lee Eisenberg,Justin Spitzer
+5,Heavy Competition,Ken Whittingham,Ryan Koh
+5,Broke,Steve Carell,Charlie Grandy
+5,Casual Friday,Brent Forrester,Anthony Q. Farrell
+5,Cafe Disco,Randall Einhorn,Warren Lieberstein
+5,Cafe Disco,Randall Einhorn,Halsted Sullivan
+5,Company Picnic,Ken Kwapis,Jennifer Celotta
+5,Company Picnic,Ken Kwapis,Paul Lieberstein
+6,Gossip,Paul Lieberstein,Paul Lieberstein
+6,The Meeting,Randall Einhorn,Aaron Shure
+6,The Promotion,Jennifer Celotta,Jennifer Celotta
+6,Niagara (Parts 1&2),Paul Feig,Greg Daniels
+6,Niagara (Parts 1&2),Paul Feig,Mindy Kaling
+6,Mafia,David Rogers,Brent Forrester
+6,The Lover,Lee Eisenberg;Gene Stupnitsky,Lee Eisenberg
+6,The Lover,Lee Eisenberg;Gene Stupnitsky,Gene Stupnitsky
+6,Koi Pond,Reginald Hudlin,Warren Lieberstein
+6,Koi Pond,Reginald Hudlin,Halsted Sullivan
+6,Double Date,Seth Gordon,Charlie Grandy
+6,Murder,Greg Daniels,Daniel Chun
+6,Shareholder Meeting,Charles McDougall,Justin Spitzer
+6,Scott's Tots,B.J. Novak,Gene Stupnitsky
+6,Scott's Tots,B.J. Novak,Lee Eisenberg
+6,Secret Santa,Randall Einhorn,Mindy Kaling
+6,The Banker,Jeffrey Blitz,Jason Kessler
+6,Sabre,John Krasinski,Jennifer Celotta
+6,The Manager and the Salesman,Marc Webb,Mindy Kaling
+6,The Delivery (Parts 1&2),Seth Gordon;Harold Ramis,Daniel Chun
+6,The Delivery (Parts 1&2),Seth Gordon;Harold Ramis,Charlie Grandy
+6,St. Patrick's Day,Randall Einhorn,Jonathan Huges
+6,New Leads,Brent Forrester,Brent Forrester
+6,Happy Hour,Matt Sohn,B.J. Novak
+6,Secretary's Day,Steve Carell,Mindy Kaling
+6,Body Language,Mindy Kaling,Justin Spitzer
+6,The Cover,Rainn Wilson,Gene Stupnitsky
+6,The Cover,Rainn Wilson,Lee Eisenberg
+6,The Chump,Randall Einhorn,Aaron Shure
+6,Whistleblower,Paul Lieberstein,Warren Lieberstein
+6,Whistleblower,Paul Lieberstein,Halsted Sullivan
+7,Nepotism,Jeffrey Blitz,Daniel Chun
+7,Counseling,Jeffrey Blitz,B.J. Novak
+7,Andy's Play,John Scott,Charlie Grandy
+7,s*x Ed,Paul Lieberstein,Paul Lieberstein
+7,The Sting,Randall Einhorn,Mindy Kaling
+7,Costume Contest,Dean Holland,Justin Spitzer
+7,Christening,Alex Hardcastle,Peter Ocko
+7,Viewing Party,Ken Whittingham,Jon Vitti
+7,WUPHF.com,Danny Leiner,Aaron Shure
+7,China,Charles McDougall,Halsted Sullivan
+7,China,Charles McDougall,Warren Lieberstein
+7,Classy Christmas (Parts 1&2),Rainn Wilson,Mindy Kaling
+7,Ultimatum,David Rogers,Carrie Kemper
+7,The Seminar,B.J. Novak,Steve Hely
+7,The Search,Michael Spiller,Brent Forrester
+7,PDA,Greg Daniels,Robert Padnick
+7,Threat Level Midnight,Tucker Gates,B.J. Novak
+7,Todd Packer,Randall Einhorn,Amelie Gillette
+7,Garage Sale,Steve Carell,Jon Vitti
+7,Training Day,Paul Lieberstein,Daniel Chun
+7,Michael's Last Dundies,Mindy Kaling,Mindy Kaling
+7,"Goodbye, Michael",Paul Feig,Greg Daniels
+7,The Inner Circle,Matt Sohn,Charlie Grandy
+7,"Dwight K. Schrute, (Acting) Manager",Troy Miller,Justin Spitzer
+7,Search Committee (Parts 1&2),Jeffrey Blitz,Paul Lieberstein
+8,The List,B.J. Novak,B.J. Novak
+8,The Incentive,Charles McDougall,Paul Lieberstein
+8,Lotto,John Krasinski,Charlie Grandy
+8,Garden Party,David Rogers,Justin Spitzer
+8,Spooked,Randall Einhorn,Carrie Kemper
+8,Doomsday,Troy Miller,Daniel Chun
+8,Pam's Replacement,Matt Sohn,Allison Silverman
+8,Gettysburg,Jeffrey Blitz,Robert Padnick
+8,Mrs. California,Charlie Grandy,Dan Greaney
+8,Christmas Wishes,Ed Helms,Mindy Kaling
+8,Trivia,B.J. Novak,Steve Hely
+8,Pool Party,Charles McDougall,Owen Ellickson
+8,Jury Duty,Eric Appel,Aaron Shure
+8,Special Project,David Rogers,Amelie Gillette
+8,Tallahassee,Matt Sohn,Daniel Chun
+8,After Hours,Brian Baumgartner,Halsted Sullivan
+8,After Hours,Brian Baumgartner,Warren Lieberstein
+8,Test The Store,Brent Forrester,Mindy Kaling
+8,Last Day In Florida,Matt Sohn,Robert Padnick
+8,Get The Girl,Rainn Wilson,Charlie Grandy
+8,Welcome Party,Ed Helms,Steve Hely
+8,Angry Andy,Claire Scanlon,Justin Spitzer
+8,Fundraiser,David Rogers,Owen Ellickson
+8,Turf War,Daniel Chun,Warren Lieberstein
+8,Turf War,Daniel Chun,Halsted Sullivan
+8,Free Family Portrait Studio,B.J. Novak,B.J. Novak
+9,The New Guys,Greg Daniels,Greg Daniels
+9,Roy's Wedding,Matt Sohn,Allison Silverman
+9,Andy's Ancestry,David Rogers,Jonathan Green
+9,Andy's Ancestry,David Rogers,Gabe Miller
+9,Work Bus,Bryan Cranston,Brent Forrester
+9,Here Comes Treble,Claire Scanlong,Owen Ellickson
+9,The Boat,John Krasinski,Dan Sterling
+9,The Whale,Rodman Flender,Carrie Kemper
+9,The Target,Brent Forrester,Graham Wagner
+9,Dwight Christmas,Charles McDougall,Robert Padnick
+9,Lice,Rodman Flender,Nicki Schwartz-Wright
+9,Suit Warehouse,Matt Sohn,Dan Greaney
+9,Customer Loyalty,Kelly Cantley-Kashima,Jonathan Green
+9,Customer Loyalty,Kelly Cantley-Kashima,Gabe Miller
+9,Junior Salesman,David Rogers,Carrie Kemper
+9,Vandalism,Lee Kirk,Owen Ellickson
+9,Couples Discount,Troy Miller,Allison Silverman
+9,Moving On,Jon Favreau,Graham Wagner
+9,The Farm,Paul Lieberstein,Paul Lieberstein
+9,Promos,Jennifer Celotta,Tim McAuliffe
+9,Stairmageddon,Matt Sohn,Dan Sterling
+9,Paper Airplane,Jesse Peretz,Halsted Sullivan
+9,Paper Airplane,Jesse Peretz,Warren Lieberstein
+9,Livin' the Dream,Jeffrey Blitz,Nicki Schwartz-Wright
+9,A.A.R.M,David Rogers,Brent Forrester
+9,Finale,Ken Kwapis,Greg Daniels
