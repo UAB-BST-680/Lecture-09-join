@@ -153,13 +153,10 @@ directors_byseason
 
 
 ---
-layout: true
+layout: false
 background-image: url(img/dplyr.png)
 background-size: 12.5%
 background-position: 97.5% 2.5%
-
-
----
 
 ## Joining verbs
 
@@ -172,6 +169,28 @@ There are 3 families of verbs designed for relational data:
 1. __Set operations__, which treat observations as if they were set elements.
 
 ---
+class: inverse, center, middle
+
+# Mutating joins
+
+---
+
+## Left join
+
+```{r, out.width='80%', echo = FALSE, fig.align='center'}
+knitr::include_graphics('img/left-join.gif')
+```
+
+---
+## Right join
+```{r, out.width='80%', echo = FALSE, fig.align='center'}
+knitr::include_graphics('img/right-join.gif')
+```
+
+---
+background-image: url(img/dplyr.png)
+background-size: 12.5%
+background-position: 97.5% 2.5%
 
 ## Joining verbs
 
@@ -191,6 +210,10 @@ ratings_byseason
 ```
 
 ---
+background-image: url(img/dplyr.png)
+background-size: 12.5%
+background-position: 97.5% 2.5%
+
 ## Joining verbs
 
 An example of __Mutating join:__
@@ -209,18 +232,6 @@ ratings_byseason %>%
 
 ```
 
----
-## Left join
-
-```{r, out.width='80%', echo = FALSE, fig.align='center'}
-knitr::include_graphics('img/left-join.gif')
-```
-
----
-## Right join
-```{r, out.width='80%', echo = FALSE, fig.align='center'}
-knitr::include_graphics('img/right-join.gif')
-```
 
 ---
 ## Semi join
@@ -235,14 +246,46 @@ knitr::include_graphics('img/anti-join.gif')
 ```
 
 ---
+background-image: url(img/dplyr.png)
+background-size: 12.5%
+background-position: 97.5% 2.5%
+
+## Joining verbs
+
+An example of __Filtering join:__
+
+```{r}
+# Find episode names that don't match
+raw_ratings %>% 
+  select(episode_name = title, imdb_rating) %>% 
+  anti_join(raw_directors)
+
+```
+
+---
+background-image: url(img/dplyr.png)
+background-size: 12.5%
+background-position: 97.5% 2.5%
+
+## Joining verbs
+
+An example of __Filtering join:__
+
+```{r}
+# Flip data sets to see why
+raw_directors %>% 
+  select(title = episode_name, director) %>% 
+  anti_join(raw_ratings)
+```
+
+
+---
 ## Full join
 ```{r, out.width='80%', echo = FALSE, fig.align='center'}
 knitr::include_graphics('img/full-join.gif')
 ```
 
 ---
-
-layout:false 
 
 ## Learning more
 

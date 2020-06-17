@@ -13,7 +13,7 @@ class: center, middle, inverse, title-slide
 # Joining data
 ## Intro to ‘The Office’
 ### Byron C. Jaeger
-### Last updated: 2020-06-01
+### Last updated: 2020-06-09
 
 ---
 
@@ -199,13 +199,10 @@ directors_byseason
 
 
 ---
-layout: true
+layout: false
 background-image: url(img/dplyr.png)
 background-size: 12.5%
 background-position: 97.5% 2.5%
-
-
----
 
 ## Joining verbs
 
@@ -218,6 +215,24 @@ There are 3 families of verbs designed for relational data:
 1. __Set operations__, which treat observations as if they were set elements.
 
 ---
+class: inverse, center, middle
+
+# Mutating joins
+
+---
+
+## Left join
+
+&lt;img src="img/left-join.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+## Right join
+&lt;img src="img/right-join.gif" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+background-image: url(img/dplyr.png)
+background-size: 12.5%
+background-position: 97.5% 2.5%
 
 ## Joining verbs
 
@@ -246,6 +261,10 @@ An example of __Mutating join:__
 ```
 
 ---
+background-image: url(img/dplyr.png)
+background-size: 12.5%
+background-position: 97.5% 2.5%
+
 ## Joining verbs
 
 An example of __Mutating join:__
@@ -272,14 +291,6 @@ ratings_byseason %&gt;%
 ## 9      9   8.28 David Rogers
 ```
 
----
-## Left join
-
-&lt;img src="img/left-join.gif" width="80%" style="display: block; margin: auto;" /&gt;
-
----
-## Right join
-&lt;img src="img/right-join.gif" width="80%" style="display: block; margin: auto;" /&gt;
 
 ---
 ## Semi join
@@ -290,13 +301,79 @@ ratings_byseason %&gt;%
 &lt;img src="img/anti-join.gif" width="80%" style="display: block; margin: auto;" /&gt;
 
 ---
+background-image: url(img/dplyr.png)
+background-size: 12.5%
+background-position: 97.5% 2.5%
+
+## Joining verbs
+
+An example of __Filtering join:__
+
+
+```r
+# Find episode names that don't match
+raw_ratings %&gt;% 
+  select(episode_name = title, imdb_rating) %&gt;% 
+  anti_join(raw_directors)
+```
+
+```
+## # A tibble: 28 x 2
+##    episode_name            imdb_rating
+##    &lt;chr&gt;                         &lt;dbl&gt;
+##  1 E-Mail Surveillance             8.4
+##  2 Boys and Girls                  8.2
+##  3 A Benihana Christmas            8.7
+##  4 The Job                         9.3
+##  5 Fun Run                         8.8
+##  6 Dunder Mifflin Infinity         8.4
+##  7 Launch Party                    8.5
+##  8 Money                           8.7
+##  9 Goodbye, Toby                   9.3
+## 10 Weight Loss                     8.8
+## # ... with 18 more rows
+```
+
+---
+background-image: url(img/dplyr.png)
+background-size: 12.5%
+background-position: 97.5% 2.5%
+
+## Joining verbs
+
+An example of __Filtering join:__
+
+
+```r
+# Flip data sets to see why
+raw_directors %&gt;% 
+  select(title = episode_name, director) %&gt;% 
+  anti_join(raw_ratings)
+```
+
+```
+## # A tibble: 32 x 2
+##    title                               director       
+##    &lt;chr&gt;                               &lt;chr&gt;          
+##  1 E-Mail Surveilance                  Paul Feig      
+##  2 Boys &amp; Girls                        Dennie Gordon  
+##  3 A Benihana Christmas (Parts 1&amp;2)    Harold Ramis   
+##  4 The Job (Parts 1&amp;2)                 Ken Kwapis     
+##  5 The Job (Parts 1&amp;2)                 Ken Kwapis     
+##  6 Fun Run (Parts 1&amp;2)                 Greg Daniels   
+##  7 Dunder Mifflin Infinity (Parts 1&amp;2) Craig Zisk     
+##  8 Launch Party (Parts 1&amp;2)            Ken Whittingham
+##  9 Money (Parts 1&amp;2)                   Paul Lieerstein
+## 10 Goodbye, Toby (Parts 1&amp;2)           Paul Feig      
+## # ... with 22 more rows
+```
+
+
+---
 ## Full join
 &lt;img src="img/full-join.gif" width="80%" style="display: block; margin: auto;" /&gt;
 
 ---
-
-
-layout:false 
 
 ## Learning more
 
