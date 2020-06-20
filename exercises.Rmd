@@ -105,6 +105,10 @@ You can import the two datasets using the `read_csv()` function. Note that your 
 
 # Problem 1
 
+Conduct exploratory data analysis of the `office_ratings` data and produce the figure shown below. 
+
+Note: I used the `gghighlight` package to add selective labels. 
+
 ```{r, out.width='100%'}
 
 knitr::include_graphics('solutions/01_solution.png')
@@ -112,6 +116,8 @@ knitr::include_graphics('solutions/01_solution.png')
 ```
 
 # Problem 2
+
+Identify the episode names that are present in `office_ratings` but not in `office_director_and_writers`. Then, identify the episode names that are present in `office_director_and_writers` but not in `office_ratings`. I saved each vector of character values in the list printed below.
 
 ```{r}
 
@@ -121,6 +127,16 @@ readr::read_rds('solutions/02_solution.rds')
 
 # Problem 3
 
+Design and implement a strategy to harmonize the episode names between these two data sets so that they can be joined. When you are finished, `anti_join()`ing the two data sets should produce an empty data set.
+
+Once the names are harmonized, left join the `office_director_and_writers` data with the `office_ratings` data
+
+Hints: 
+
+- I used the following functions to harmonize episode names: `tolower()`, `str_remove_all()`, and `str_replace()`.
+
+- Don't worry if it takes more than a few steps to get everything harmonized. Just take it one step at a time.
+
 ```{r}
 
 readr::read_rds('solutions/03_solution.rds')
@@ -129,6 +145,18 @@ readr::read_rds('solutions/03_solution.rds')
 
 # Problem 4
 
+Summarize the merged data by computing 
+
+1. the number of episodes that each writer contributed to.
+1. the mean rating of episodes by writer.
+
+Using the summarized data, create a new column that indicates who is a `top_writer`. The criteria for being identified as a `top_writer` are having a mean episode rating > 8.6 or writing > 20 episodes.
+
+Using the summarized and mutated data, reproduce the plot below.
+
+Notes: 
+
+- I used `gghighlight` to selectively label `top_writer` values. 
 
 ```{r, out.width='100%'}
 
@@ -137,6 +165,14 @@ knitr::include_graphics('solutions/04_solution.png')
 ```
 
 # Problem 5
+
+Merge the data you created in problem 4 with the data you previously merged in problem 3, and then create a table that shows the top 5 episodes for each `top_writer`, arranged by rating. If the `top_writer` wrote k < 5 episodes, just show the k episodes that the writer contributed to. 
+
+Notes: 
+
+- `group_by()`, `arrange()`, and `slice()` work extremely well together.
+
+
 
 ```{r}
 
